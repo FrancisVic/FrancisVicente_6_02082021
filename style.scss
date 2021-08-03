@@ -47,12 +47,15 @@ main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .photographe-presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  width: 200px;
   & h2 {
     color: #d3573c;
   }
@@ -112,5 +115,8 @@ main {
   }
   header {
     flex-direction: column;
+    & h1 {
+      margin: 0px;
+    }
   }
 }
