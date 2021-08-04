@@ -13,15 +13,17 @@ header {
 header h1 {
   color: #901c1c;
   font-weight: 400;
+  font-size: 30px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  margin: 20px;
+nav span {
   color: #901c1c;
+  margin: 2px;
+  padding: 4px 8px;
+  font-weight: bold;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 12px;
+  font-size: 14px;
 }
 
 main {
@@ -86,20 +88,18 @@ body {
     padding: 0px;
   }
 
-  nav ul > li {
-    margin: 12px;
+  nav {
+    width: 80%;
+    margin-top: 40px;
   }
-  nav ul {
-    padding: 0px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  nav li {
-    font-size: 16px;
+  nav span {
+    font-size: 11px;
+    margin: 2px;
   }
 
-  .logo img {
-    width: 100px;
+  .logo {
+    object-fit: contain;
+    width: 120px;
   }
 
   .photographe {
@@ -115,7 +115,11 @@ body {
   header {
     flex-direction: column;
   }
+  header .logo {
+    margin-right: 210px;
+  }
   header h1 {
+    font-size: 14px;
     margin: 0px;
   }
 }
