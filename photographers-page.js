@@ -137,7 +137,6 @@ main(data.photographers);
 
 function filterPhotographer() {
     let containeur = document.getElementById('nav');
-    console.log(containeur);
     let getSpan = containeur.querySelectorAll('span');
     for (const elem of getSpan) {
         elem.addEventListener('click', function (e) {
@@ -148,15 +147,31 @@ function filterPhotographer() {
                 let tmp = i.querySelectorAll('li');
                 let tags = Array.prototype.map.call(tmp, function (t) { return t.textContent; });
                 if (!tags.includes(tagToCheck) == true && !tags.includes(tagToCheck + "s") == true) {
-                    console.log("if include");
                     i.style.display = 'none';
                 }
                 else
                     i.style.display = '';
-                console.log(tags);
-
             }
         })
     }
 }
 filterPhotographer();
+
+function photographePage() {
+    let photographer = document.getElementsByClassName('photographe-presentation');
+    for (let elem of photographer) {
+        let img = elem.getElementsByTagName('img');
+        img[0].addEventListener('click', function (e) {
+            let container = document.getElementById('mainDiv').parentNode;
+            console.log(container);
+            container.innerHTML = "";
+        })
+    }
+}
+window.onload = function () {
+    photographePage();
+}
+
+function reloadPage() {
+    document.location.reload();
+}
