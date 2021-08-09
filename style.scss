@@ -58,6 +58,26 @@ main {
   align-items: center;
   text-align: center;
   width: 200px;
+
+  & img {
+    // animation: 4s ease-in-out forwards slide;
+  }
+  // @keyframes slide {
+  //   0% {
+  //     opacity: 0;
+  //     margin-top: 350px;
+  //     transform: rotate(100deg);
+  //   }
+  //   20% {
+  //     opacity: 0,3;
+  //   }
+  //   50%{
+  //     opacity: 0.7;
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //   }
+  // }
   & h2 {
     color: #d3573c;
   }
@@ -83,6 +103,8 @@ main {
 .orange {
   border: 2px solid orange;
 }
+
+
 
 @media screen and (max-width: 800px) {
   html,
