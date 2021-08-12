@@ -93,8 +93,9 @@ function generatePhotographer(data) {
         str += `<li>#${element}</li>`
     });
     let result = `<div class="photographe-presentation">
-    <img src="image/${data.portrait}" alt="présentation de Mimi Keel" role="presentation"
-        aria-label="présentation photographe" />
+    <div class="picturePhotographe"><a href="photographer.html"><img src="image/${data.portrait}" alt="présentation de Mimi Keel" role="presentation"
+        aria-label="présentation photographe"/> </a>
+        </div>
     <h2>${data.name}</h2>
     <span>${data.city}</span>
     <span>${data.tagline}</span>
@@ -175,3 +176,4 @@ window.onload = function () {
 function reloadPage() {
     document.location.reload();
 }
+
