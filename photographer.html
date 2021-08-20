@@ -11,18 +11,17 @@
 </head>
 
 <body>
-    <banner>
+    <div class="logo">
         <a href="index.html"><img src="image/Group.png" alt="Logo de presentation" role="Logo présentation"
                 class="logo-page-photographe" onclick="reloadPage()" /> </a>
-    </banner>
-    <header>
-        <div class="header-photographer">
-            <div class="header-contact">
+    </div>
+    <header id="header">
+        <div class="header__page__photographer">
+            <div class="header__page__contact">
                 <h1>Mimi Keel</h1>
                 <button>Contactez-moi</button>
             </div>
-            <div class="picture">
-                <img src="image/EllieRoseWilkens.jpg" />
+            <div class="container__picture">
             </div>
             <div class="header-photographer-span">
                 <span>London, UK</span>
@@ -34,78 +33,36 @@
                     <span>#animals</span>
                 </div>
             </div>
+
+        </div>
+        <div class="header__picture">
+            <img src="image/EllieRoseWilkens.jpg" />
         </div>
     </header>
-    <div class="photographer-page-main">
-        <select size="1" name="pet">
-            <option value='cat'>Popularité</option>
-            <option value='dog'>Date</option>
-            <option value='mouse'>Titre</option>
-        </select>
-        <div class="gallery">
-            <div class="gallery__row">
-                <div class="gallery__picture">
-                    <img src="image/pictureEllie/Architecture_Horseshoe.jpg" />
-                    <div class="like">
-                        <span>Arc-en-cie</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                <div class="gallery__picture">
-                    <img src="image/pictureEllie/Sport_Next_Hold.jpg" />
-                    <div class="like">
-                        <span>Arc-en-cie</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                <div class="gallery__picture">
-                    <img src="image/pictureEllie/Sport_Jump.jpg" />
-                    <div class="like">
-                        <span>Mariage à la mer</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
+    <div id="main">
+        <div class="container__picture__main">
+            <div class="main__picture">
+                <img src="image/pictureEllie/Architecture_Cross_Bar.jpg" />
             </div>
-            <div class="gallery__row">
-                <div class="gallery__picture">
-                    <IMG src="image/pictureEllie/Architecture_White_Light.jpg" />
-                    <div class="like">
-                        <span>Arc-en-cie</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                <div class="gallery__picture">
-                    <img src="image/pictureEllie/Sport_Race_End.jpg" />
-                    <div class="like">
-                        <span>Arc-en-cie</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                <div class="gallery__picture">
-                    <img src="image/pictureEllie/Sport_Sky_Cross.jpg" />
-                    <div class="like">
-                        <span>Arc-en-cie</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
+            <div class="main__picture">
+                <img src="image/pictureEllie/Architecture_Water_on_Modern.jpg" />
             </div>
-            <div class="gallery__row">
-                <div class="gallery__picture">
-                    <video control width="400">
-                        <source src="image/pictureEllie/Sport_Tricks_in_the_air.mp4" type="video/mp4" class="video1" />
-                    </video>
-                </div>
-                <div class="gallery__picture">
-                </div>
-                <div class="gallery__picture">
-                </div>
+            <div class="main__picture">
+                <img src="image/pictureEllie/Architecture_White_Light.jpg" />
             </div>
-
+            <div class="main__picture">
+                <img src="image/pictureEllie/Architecture_Connected_Curves.jpg" />
+            </div>
+            <div class="main__picture">
+                <img src="image/pictureEllie/Sport_Jump.jpg" />
+            </div>
+            <div class="main__picture">
+                <img src="image/pictureEllie/Sport_Sky_Cross.jpg" />
+            </div>
 
         </div>
-
-
     </div>
+
 
     <!-- Modal content -->
 

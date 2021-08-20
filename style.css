@@ -26,273 +26,140 @@ nav span {
   font-size: 14px;
 }
 
-main {
+#container {
   display: flex;
-  margin-top: 55px;
+  justify-content: center;
 }
-main img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.container-top {
+#container .container__photographer {
+  display: flex;
   width: 100%;
-}
-
-.photographe {
-  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+}
+#container .container__photographer__picture {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-.picturePhotographe {
-  width: 200px;
-  height: 200px;
+#container .photographer {
+  width: 30%;
+  margin-bottom: 50px;
 }
-.picturePhotographe img {
-  width: 100%;
-  object-fit: cover;
-  animation: slide 3000ms forwards ease-in-out;
+#container .photographer__picture {
+  width: 250px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-@keyframes slide {
-  from {
-    opacity: 0;
-    margin-top: 600px;
-    transform: rotate(100deg);
-  }
-  to {
-    opacity: 1;
-    margin-top: 0px;
-  }
-}
-
-.photographe-presentation {
+#container .photographer__describe {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 200px;
+  font-size: 18px;
 }
-.photographe-presentation h2 {
+#container .photographer__describe h1 {
+  font-size: 36px;
   color: #d3573c;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.photographe-presentation ul {
-  list-style: none;
+#container .photographer__tag {
   display: flex;
-  padding-left: 0px;
 }
-.photographe-presentation ul li {
-  margin: 7px;
+#container .photographer__tag span {
+  margin: 5px;
   color: #901c1c;
   font-weight: bold;
-  border: 0.5px solid #c4c4c4;
-  border-radius: 11px;
-  padding: 0px 10px;
 }
-
-/*# sourceMappingURL=style.scss.map */
-.border {
-  border: 2px solid red;
-}
-
-.orange {
-  border: 2px solid orange;
-}
-
-.header-photographer {
-  background: #fafafa;
+#container .photographer img {
   width: 100%;
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-}
-.header-photographer .picture {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  margin-left: 60%;
-  margin-top: 60px;
-  justify-content: center;
-}
-.header-photographer .picture img {
-  width: 100%;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
 }
-.header-photographer span {
-  margin: 7px;
-  font-size: 18px;
-  margin-left: 40px;
+
+.header__page__photographer {
+  width: 40%;
 }
-.header-photographer h1 {
-  color: #d3573c;
-  font-size: 64px;
-  margin-left: 40px;
+
+.header__page__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__page__contact button {
+  padding: 0px 50px;
+  border-radius: 12px 12px 12px 12px;
+  height: 60px;
+  background: #911c1c;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 50px;
+}
+.logo img {
+  width: 100%;
 }
 
 .header-photographer-span {
   display: flex;
   flex-direction: column;
 }
-
-.link {
+.header-photographer-span span {
   margin: 7px;
-  margin-left: 40px;
-}
-.link span {
-  margin-left: 10px;
-  color: #911c1c;
-  font-weight: bold;
+  font-size: 18px;
 }
 
-.header-contact {
+#header {
+  background: #fafafa;
+  justify-content: space-between;
+  padding: 40px 65px;
+}
+#header h1 {
+  font-size: 46px;
+}
+#header .link span {
+  color: #901c1c;
+}
+
+.header__picture {
+  width: 150px;
+  height: auto;
+}
+.header__picture img {
+  width: 100%;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container__picture {
   display: flex;
-  margin-top: 20px;
 }
-.header-contact button {
-  margin-left: 100px;
-  margin-top: 40px;
-  width: 11%;
-  height: 56px;
-  border-radius: 10px 10px 10px 10px;
-  background: #911c1c;
-  color: #fff;
-  font-size: 18px;
-}
-
-.logo-page-photographe {
-  width: 170px;
-  margin-top: 37px;
-}
-
-.photographer-page-main select {
-  width: 200px;
-  background: #911c1c;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-}
-
-.gallery {
+.container__picture__main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-}
-.gallery__row {
-  display: flex;
-  width: 100%;
   justify-content: space-between;
+  margin-top: 100px;
 }
-.gallery__picture {
-  width: 350px;
-  height: 300px;
-  margin-bottom: 100px;
+
+.main__picture {
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+  height: auto;
+  margin-bottom: 150px;
 }
-.gallery img {
+.main__picture img {
   width: 100%;
-  max-height: 300px;
+  height: 250px;
+  border-radius: 10px;
   object-fit: cover;
-  border-radius: 10px 10px 10px 10px;
-}
-
-@media screen and (min-width: 375px) and (max-width: 1024px) {
-  .logo-page-photographe {
-    width: 150px;
-  }
-
-  .header-contact {
-    justify-content: center;
-  }
-  .header-contact h1 {
-    font-size: 36px;
-  }
-  .header-contact button {
-    position: fixed;
-    bottom: 0px;
-    padding: 7px 20px;
-    margin: 0px;
-    width: 60%;
-    margin-bottom: 90px;
-  }
-
-  .header-photographer-span span {
-    font-size: 13px;
-  }
-
-  .header-photographer > .picture img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .header-photographer .picture {
-    margin-left: 190px;
-    margin-top: 20px;
-  }
-
-  .gallery__row {
-    flex-direction: column;
-  }
-
-  .gallery__picture {
-    width: 100%;
-    height: 150px;
-  }
-  .gallery__picture video {
-    width: 100%;
-  }
-}
-.like {
-  display: flex;
-  justify-content: space-between;
-  color: #911c1c;
-  font-size: 24px;
-  margin-top: 3px;
-}
-
-@media screen and (max-width: 800px) {
-  html,
-body {
-    padding: 0px;
-  }
-
-  nav {
-    width: 80%;
-    margin-top: 40px;
-  }
-  nav span {
-    font-size: 11px;
-    margin: 2px;
-  }
-
-  .logo {
-    object-fit: contain;
-    width: 120px;
-  }
-
-  .photographe {
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-
-  .photographe-presentation {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  header {
-    flex-direction: column;
-  }
-  header .logo {
-    margin-right: 210px;
-  }
-  header h1 {
-    font-size: 14px;
-    margin: 0px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
