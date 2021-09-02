@@ -1,19 +1,18 @@
-async function fetchMovies() {
-    let response = await fetch('FishEyeData.json')
-    console.log(response)
-        .then(function (res) {
-            if (res.ok) {
-                return res.json();
-            }
-        })
-    fetchMovies();
-            .then(function (value) {
-        let photographer = document.getElementsByClassName('photographer')
-        addEventListener('click', photographer)
-        document.createElement('div')
-    })
-        .catch(function (err) {
-            // Une erreur est survenue
-        });
+async function fetchPhotographer() {
+    let response = await fetch('FishEyeData.json');
+    console.log(response);
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    let photographer = [];
+
+    try {
+        photographer = await fetchPhotographer();
+    }
+    catch (e) {
+        console.log('Erreur!');
+        console.log('e');
+    }
+    console.log(photographer);
+});
 
