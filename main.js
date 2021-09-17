@@ -27,26 +27,8 @@ function generatePhotographer(value) { //créer les élements html
         // console.log(name)
     }
 
-    let header = document.createElement('header');
-    let banner = document.createElement('div');
-    banner.classList.add('banner');
-    header.appendChild(banner);
-    console.log(header);
-
-    let nav = document.createElement('nav');
-    header.appendChild(nav);
-    nav.innerHTML = "<span>efer</span>";
-    nav.setAttribute('id','nav');
-    console.log(nav);
-    let container = document.createElement('div');
-    container.setAttribute('id', 'container');
-
-    let containerPhotographer = document.createElement('div');
-    container.appendChild(containerPhotographer);
-    containerPhotographer.classList.add('container__photographer');
 
     let photographer = document.createElement('div');
-    containerPhotographer.appendChild(photographer);
     photographer.classList.add('photographer');
 
     let containerPicture = document.createElement('div');
@@ -56,20 +38,27 @@ function generatePhotographer(value) { //créer les élements html
     let photographerPicture = document.createElement('div');
     containerPicture.appendChild(photographerPicture);
     photographerPicture.classList.add('photographer__picture');
-   
+
     let imageSrc = document.createElement('img')
     photographerPicture.appendChild(imageSrc);
     imageSrc.setAttribute('src', 'image/EllieRoseWilkens.jpg');
 
-    
-    
-    
-    console.log(container);
-    console.log(photographer);
+    let getContainerPhotographer = document.getElementById('container__photographer');
+    getContainerPhotographer.appendChild(photographer);
 
-
-
-
-
-    // console.log(value);
+    let describe = document.createElement('div');
+    photographer.appendChild(describe);
+    describe.classList.add('photographer__describe');
+    let namePhotographer = document.createElement('h2');
+    let city = document.createElement('span');
+    let price = document.createElement('span');
+    describe.appendChild(namePhotographer);
+    describe.appendChild(city);
+    describe.appendChild(price);
+    let hashtag = document.createElement('span');
+    describe.appendChild(hashtag);
+    namePhotographer.textContent = "Ellie Rose Wilkens";
+    city.textContent = "Paris, France";
+    price.textContent ="Travaille sur des compositions complexes 250€/jour";
+    hashtag.textContent ="#Sport";
 }
