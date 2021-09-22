@@ -39,10 +39,13 @@ function generatePhotographer(value) { //créer les élements html
     containerPicture.appendChild(photographerPicture);
     photographerPicture.classList.add('photographer__picture');
 
-    let imageSrc = document.createElement('img')
-    photographerPicture.appendChild(imageSrc);
+    let imageSrc = document.createElement('img');
+    let a = document.createElement('a');
+    a.setAttribute('href', 'photographer.html');
+    photographerPicture.appendChild(a);
+    a.appendChild(imageSrc);
     imageSrc.setAttribute('src', 'image/EllieRoseWilkens.jpg');
-
+    
     let getContainerPhotographer = document.getElementById('container__photographer');
     getContainerPhotographer.appendChild(photographer);
 
@@ -59,6 +62,10 @@ function generatePhotographer(value) { //créer les élements html
     describe.appendChild(hashtag);
     namePhotographer.textContent = "Ellie Rose Wilkens";
     city.textContent = "Paris, France";
-    price.textContent ="Travaille sur des compositions complexes 250€/jour";
-    hashtag.textContent ="#Sport";
+    price.textContent = "Travaille sur des compositions complexes 250€/jour";
+    hashtag.textContent = "#Sport";
+
+    for (i = 0; i <= 6; i++) {
+        let photographers = document.createElement('div')
+    }
 }
