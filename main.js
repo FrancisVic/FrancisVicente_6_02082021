@@ -45,7 +45,7 @@ function generatePhotographer(value) { //créer les élements html
     photographerPicture.appendChild(a);
     a.appendChild(imageSrc);
     imageSrc.setAttribute('src', 'image/EllieRoseWilkens.jpg');
-    
+
     let getContainerPhotographer = document.getElementById('container__photographer');
     getContainerPhotographer.appendChild(photographer);
 
@@ -64,8 +64,4 @@ function generatePhotographer(value) { //créer les élements html
     city.textContent = "Paris, France";
     price.textContent = "Travaille sur des compositions complexes 250€/jour";
     hashtag.textContent = "#Sport";
-
-    for (i = 0; i <= 6; i++) {
-        let photographers = document.createElement('div')
-    }
 }
