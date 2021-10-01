@@ -16,52 +16,60 @@ function fetchPhotograph() {
 }
 fetchPhotograph();
 
-function generatePhotographer(value) { //créer les élements html
+function generatePhotographer(value) {
+
+    
+
+    
     console.log(value);
-    let str = window.location.href;
-    let url = new URL(str);
-    console.log(url);
-    let search_params = new URLSearchParams(url.search);
-    if (search_params.has('name')) {
-        let name = search_params.get('name');
-        // console.log(name)
-    }
-
-
     let photographer = document.createElement('div');
     photographer.classList.add('photographer');
 
     let containerPicture = document.createElement('div');
-    photographer.appendChild(containerPicture);
     containerPicture.classList.add('container__photographer__picture');
+    photographer.appendChild(containerPicture);
 
     let photographerPicture = document.createElement('div');
-    containerPicture.appendChild(photographerPicture);
     photographerPicture.classList.add('photographer__picture');
+    containerPicture.appendChild(photographerPicture);
 
     let imageSrc = document.createElement('img');
     let a = document.createElement('a');
     a.setAttribute('href', 'photographer.html');
-    photographerPicture.appendChild(a);
-    a.appendChild(imageSrc);
     imageSrc.setAttribute('src', 'image/EllieRoseWilkens.jpg');
 
+    photographerPicture.appendChild(a);
+    a.appendChild(imageSrc);
+
     let getContainerPhotographer = document.getElementById('container__photographer');
-    getContainerPhotographer.appendChild(photographer);
 
     let describe = document.createElement('div');
     photographer.appendChild(describe);
     describe.classList.add('photographer__describe');
+    describe.style.fontFamily = 'DM Sans';
     let namePhotographer = document.createElement('h2');
+    namePhotographer.textContent = "Ellie Rose Wilkens";
+    namePhotographer.style.fontWeight = '400';
+    namePhotographer.style.fontSize = '36px';
     let city = document.createElement('span');
+    city.textContent = "Paris, France";
+    city.style.color = '#901C1C';
+
+    let priceDescribe = document.createElement('span');
+    priceDescribe.textContent = "Travaille sur des compositions complexes";
+
     let price = document.createElement('span');
+    price.textContent = "250€/jour";
+    price.style.color = '#757575';
+
+    let hashtag = document.createElement('span');
+    hashtag.classList.add('border-tags');
+    hashtag.textContent = "#sport";
+    hashtag.style.fontWeight = '500';
+
     describe.appendChild(namePhotographer);
     describe.appendChild(city);
     describe.appendChild(price);
-    let hashtag = document.createElement('span');
     describe.appendChild(hashtag);
-    namePhotographer.textContent = "Ellie Rose Wilkens";
-    city.textContent = "Paris, France";
-    price.textContent = "Travaille sur des compositions complexes 250€/jour";
-    hashtag.textContent = "#Sport";
+    getContainerPhotographer.appendChild(photographer);
 }
