@@ -45,10 +45,9 @@ nav span {
 #container .photographer {
   width: 30%;
   margin-bottom: 50px;
+  font-family: "DM Sans";
 }
 #container .photographer__picture {
-  width: 250px;
-  height: auto;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
@@ -57,13 +56,23 @@ nav span {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 18px;
 }
 #container .photographer__describe h2 {
   font-size: 36px;
+  font-weight: 400;
   color: #d3573c;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#container .photographer__describe .city {
+  color: #901C1C;
+  font-size: 13px;
+}
+#container .photographer__describe .priceDesc {
+  font-size: 10px;
+}
+#container .photographer__describe .price {
+  font-size: 9px;
 }
 #container .photographer__tag {
   display: flex;
@@ -74,17 +83,22 @@ nav span {
   font-weight: bold;
 }
 #container .photographer img {
-  width: 100%;
+  width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
 }
 
+.containTag {
+  display: flex;
+}
+
 .border-tags {
-  border: 0.5px solid #C4C4C4;
+  border: 0.5px solid #c4c4c4;
   border-radius: 11px;
   padding: 0px 5px;
-  color: #901C1C;
+  color: #901c1c;
+  font-size: 12px;
 }
 
 .header__page__photographer {
