@@ -76,7 +76,7 @@ function generatePhotographer(value) {
             let hashtag = document.createElement('span');
             hashtag.classList.add('border-tags');
             hashtag.textContent = value.photographers[j].tags[i];
-            console.log(value.photographers[j].tags[i]);
+            console.log(hashtag);
             describe.appendChild(hashtag);
             i++;
         }
