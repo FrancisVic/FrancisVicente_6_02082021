@@ -89,6 +89,10 @@ nav span {
   border-radius: 50%;
 }
 
+.containerHashtag {
+  display: flex;
+}
+
 .containTag {
   display: flex;
 }
